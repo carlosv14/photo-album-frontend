@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card-body">
+    <h2 class="card-title">Albums</h2>
+    <div class="card-text">
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>
+                 Title
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor = "let album of albums">
+              <td routerLink="/albums/{{album.id}}">{{album.title}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
